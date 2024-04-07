@@ -1,0 +1,138 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-image: url(image/Untitled\ design4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul li a:hover {
+    color: #3e6dab; /* Change font color on hover */
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Featured Recipes section styles */
+.featured-recipes, .recent-discussions {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+h2{
+    color: white;
+  }
+
+.recipe-card, .discussion {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(25% - 40px);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover, .discussion:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img, .discussion img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3, .discussion h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-card p, .discussion p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.recipe-card a, .discussion a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/* Star rating styles */
+/* Star rating styles */
+.rating {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.rating .star {
+    color: #040404; /* Set star color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.rating .star:hover {
+    color: #050505; /* Change star color on hover */
+    cursor: pointer;
+}
+
+/* Box shadow and hover effect for the article and feature boxes */
+.article, .feature {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article:hover, .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.featured-recipes:hover{
+    cursor: pointer;
+}

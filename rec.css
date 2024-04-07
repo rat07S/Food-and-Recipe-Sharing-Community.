@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #040404;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main{
+    background-color: rgb(173, 188, 203);
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #fffbfb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f6f1f1;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+
+main {
+    padding: 20px;
+}
+
+.recipes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the recipes */
+}
+
+.recipe {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Two recipes per row */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.recipe:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add hover effect */
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Center the text */
+    padding-right: 50%;
+    padding-left: 50%;
+    font-style: italic;
+}
+
+
+h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .recipes-section {
+        flex-direction: column;
+        align-items: center; /* Center the recipes vertically */
+    }
+
+    .recipe {
+        width: 100%; /* One recipe per row on smaller screens */
+    }
+}

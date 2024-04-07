@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url('image/Untitled design1.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(131, 129, 129, 0.5);
+}
+
+.login-box {
+  width: 400px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  border: 2px solid rgba(244, 242, 242, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+
+h2 {
+  font-size: 2em;
+  color: #0b0b0b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-box {
+
+  width: 310px;
+  margin: 20px 0;
+  position: relative;
+  
+
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #0c0c0c;
+  transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #0c0c0c;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  color: #0c0c0c;
+  transform: translateY(-50%);
+}
+
+.remember-forgot {
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: #0c0c0c;
+}
+
+.remember-forgot label input {
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fefbfb;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.register-link {
+  font-size: .9em;
+  color: #0c0c0c;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .input-box {
+    width: 100%;
+  }
+}
