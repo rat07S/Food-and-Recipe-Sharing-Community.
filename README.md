@@ -1,3 +1,5 @@
+Live link - https://rathishs.neocities.org/food/home 
+
 HTML Structure: The overall structure of the HTML document is clear and follows best practices. The use of semantic tags helps to organize the content effectively.
 
 Navigation: The navigation menu is straightforward and provides easy access to different sections of the website. Each menu item is properly linked to its corresponding page.
